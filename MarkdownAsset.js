@@ -1,19 +1,19 @@
 const { Asset } = require("parcel-bundler");
-const fm = require("front-matter");
+const matter = require("gray-matter");
 
 class MarkdownAsset extends Asset {
   constructor(name, pkg, options) {
     super(name, pkg, options);
+    // We export the result as JavaScript
     this.type = "js";
   }
-  parse(markdownWithFrontmatter) {
-    const { attributes: frontmatter, body: markdown } = fm(
-      markdownWithFrontmatter
-    );
-    const md = { frontmatter, markdown };
+
+  async parse(fullText) {
+    const md = matter(fullText);
     this.code = `${JSON.stringify(md)}`;
   }
-  generate() {
+
+  async generate() {
     const js = `module.exports = ${this.code}`;
     return { js };
   }

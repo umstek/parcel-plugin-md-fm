@@ -1,6 +1,6 @@
 {
   "name": "parcel-plugin-md-fm",
-  "version": "0.1.15",
+  "version": "0.3.0",
   "description": "Parcel plugin for loading markdown with parsed frontmatter",
   "main": "index.js",
   "scripts": {
@@ -8,6 +8,7 @@
   },
   "keywords": [
     "parcel",
+    "plugin",
     "parceljs",
     "markdown",
     "frontmatter"
@@ -22,8 +23,11 @@
   "devDependencies": {
     "parcel-bundler": "^1.9.0"
   },
+  "peerDependencies": {
+    "parcel-bundler": "^1.9.0"
+  },
   "dependencies": {
-    "front-matter": "^2.3.0"
+    "gray-matter": "^4.0.1"
   },
   "author": "Wickramaranga Abeygunawardhana <umstek@live.com> (http://www.umstek.tk)",
   "license": "MIT"

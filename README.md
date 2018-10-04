@@ -21,15 +21,15 @@ yarn add --dev parcel-plugin-md-fm
 Importing:
 
 ```js
-import { markdown, frontmatter } from "./file.md";
+import { content, data } from "./file.md";
 ```
 
-If you get errors or red underlines in editors, add a `typings.d.ts` containing:
+If you get errors or red underlines in editors, add a `markdown.d.ts` file containing:
 
 ```ts
 declare module "*.md" {
-  const markdown: string;
-  const frontmatter: object;
+  const content: string;
+  const data: object;
 }
 ```
 
@@ -39,6 +39,6 @@ Tests not implemented yet.
 
 ## About
 
-This uses the excellent `front-matter` library under the hood which separates and then translates `yaml` frontmatter from a markdown file. See `jxson/front-matter` for the exact `json` result format.
+This uses the excellent `gray-matter` library under the hood which separates and then translates `yaml` or other frontmatter from a markdown file. See [jonschlinkert/gray-matter](https://github.com/jonschlinkert/gray-matter#returned-object) for the exact result format.
 
-Markdown is returned as a string without further parsing so that you can use it with a parser/formatter of your choice like `markdown-to-jsx` (if you're using react).
+Markdown is returned as a string (`content`) without further parsing so that you can use it with a parser/formatter of your choice like [markdown-to-jsx](https://github.com/probablyup/markdown-to-jsx) (if you're using react).
