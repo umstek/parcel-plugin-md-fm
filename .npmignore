@@ -2,3 +2,5 @@
 .gitignore
 parcel.log
 dist
+example
+test
