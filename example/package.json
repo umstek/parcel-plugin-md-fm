@@ -1,6 +1,6 @@
 {
   "name": "example",
-  "version": "0.3.0",
+  "version": "0.3.2",
   "description": "Markdown loading example",
   "main": "index.js",
   "scripts": {
