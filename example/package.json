@@ -1,6 +1,6 @@
 {
   "name": "example",
-  "version": "0.3.2",
+  "version": "0.4.0",
   "description": "Markdown loading example",
   "main": "index.js",
   "scripts": {
@@ -11,7 +11,7 @@
   "author": "Wickramaranga Abeygunawardhana <umstek@live.com> (http://www.umstek.tk)",
   "license": "MIT",
   "devDependencies": {
-    "parcel-bundler": "^1.10.1",
+    "parcel-bundler": "^1.12.3",
     "parcel-plugin-md-fm": "file:.."
   }
 }
