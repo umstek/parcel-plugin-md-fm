@@ -1,4 +1,4 @@
-name: NPM Release
+name: Package Publish
 
 on:
   release:
@@ -39,4 +39,4 @@ jobs:
           scope: '@umstek'
       - run: npm publish
         env:
-          NODE_AUTH_TOKEN: ${{secrets.GITHUB_TOKEN}}
+          NODE_AUTH_TOKEN: ${{secrets.gpr_token}}
