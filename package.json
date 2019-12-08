@@ -17,9 +17,6 @@
     "type": "git",
     "url": "https://github.com/umstek/parcel-plugin-md-fm.git"
   },
-  "publishConfig": {
-    "registry": "https://npm.pkg.github.com/" 
-  },
   "bugs": {
     "url": "https://github.com/umstek/parcel-plugin-md-fm/issues"
   },
