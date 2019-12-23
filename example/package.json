@@ -2,14 +2,14 @@
   "name": "example",
   "version": "0.5.4",
   "description": "Markdown loading example",
+  "license": "MIT",
+  "author": "Wickramaranga Abeygunawardhana <umstek@live.com> (http://www.umstek.tk)",
   "main": "index.js",
   "scripts": {
-    "start": "parcel src/index.html --out-dir dist/ --no-cache",
     "build": "parcel build src/index.html --out-dir dist/ --public-url ./ --no-cache",
+    "start": "parcel src/index.html --out-dir dist/ --no-cache",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "Wickramaranga Abeygunawardhana <umstek@live.com> (http://www.umstek.tk)",
-  "license": "MIT",
   "devDependencies": {
     "parcel-bundler": "^1.12.4",
     "parcel-plugin-md-fm": "file:.."

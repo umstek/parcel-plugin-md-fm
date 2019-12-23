@@ -2,7 +2,7 @@ name: Package Publish
 
 on:
   release:
-    types: 
+    types:
       - created
 
 jobs:
@@ -36,7 +36,8 @@ jobs:
         with:
           node-version: 12
           registry-url: https://npm.pkg.github.com/
-          scope: '@umstek'
+          scope: "@umstek"
+      - run: npm run ci-gpr
       - run: npm publish
         env:
           NODE_AUTH_TOKEN: ${{secrets.gpr_token}}

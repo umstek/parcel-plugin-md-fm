@@ -2,10 +2,6 @@
   "name": "parcel-plugin-md-fm",
   "version": "0.5.4",
   "description": "Parcel plugin for loading markdown with parsed frontmatter",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
   "keywords": [
     "parcel",
     "plugin",
@@ -13,22 +9,27 @@
     "markdown",
     "frontmatter"
   ],
+  "bugs": {
+    "url": "https://github.com/umstek/parcel-plugin-md-fm/issues"
+  },
   "repository": {
     "type": "git",
     "url": "https://github.com/umstek/parcel-plugin-md-fm.git"
   },
-  "bugs": {
-    "url": "https://github.com/umstek/parcel-plugin-md-fm/issues"
+  "license": "MIT",
+  "author": "Wickramaranga Abeygunawardhana <umstek@live.com> (http://www.umstek.tk)",
+  "main": "index.js",
+  "scripts": {
+    "ci-gpr": "node scripts/prepare-gpr.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "gray-matter": "^4.0.2"
   },
   "devDependencies": {
     "parcel-bundler": "^1.12.4"
   },
   "peerDependencies": {
     "parcel-bundler": "^1.12.3"
-  },
-  "dependencies": {
-    "gray-matter": "^4.0.2"
-  },
-  "author": "Wickramaranga Abeygunawardhana <umstek@live.com> (http://www.umstek.tk)",
-  "license": "MIT"
+  }
 }
