@@ -1,6 +1,6 @@
 {
   "name": "parcel-plugin-md-fm",
-  "version": "0.5.0",
+  "version": "0.5.4",
   "description": "Parcel plugin for loading markdown with parsed frontmatter",
   "main": "index.js",
   "scripts": {
