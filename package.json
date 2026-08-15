@@ -34,7 +34,7 @@
   },
   "dependencies": {
     "@parcel/plugin": "^2.0.0",
-    "gray-matter": "^4.0.2"
+    "gray-matter": "^4.0.3"
   },
   "devDependencies": {
     "@parcel/config-default": "^2.16.4",
