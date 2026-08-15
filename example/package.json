@@ -1,17 +1,17 @@
 {
   "name": "example",
   "version": "0.8.0",
+  "private": true,
   "description": "Markdown loading example",
   "license": "MIT",
   "author": "Wickramaranga Abeygunawardhana <umstek@live.com> (http://www.umstek.tk)",
-  "main": "index.js",
   "scripts": {
-    "build": "parcel build src/index.html --out-dir dist/ --public-url ./ --no-cache",
-    "start": "parcel src/index.html --out-dir dist/ --no-cache",
+    "build": "parcel build src/index.html --dist-dir dist --public-url ./ --no-cache",
+    "start": "parcel src/index.html --no-cache",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "devDependencies": {
-    "parcel-bundler": "1.12.5",
-    "parcel-plugin-md-fm": "file:.."
+    "parcel": "^2.16.4",
+    "parcel-transformer-md-fm": "workspace:*"
   }
 }
