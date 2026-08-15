@@ -13,9 +13,19 @@ function evaluateModule(source) {
 describe("markdownToModule", () => {
   it("exports parsed front-matter data and the content body", () => {
     const result = evaluateModule(
-      ['---', "title: Hello", "tags:", "  - a", "  - b", "---", "", "# Heading", "", "Body text.", ""].join(
-        "\n",
-      ),
+      [
+        "---",
+        "title: Hello",
+        "tags:",
+        "  - a",
+        "  - b",
+        "---",
+        "",
+        "# Heading",
+        "",
+        "Body text.",
+        "",
+      ].join("\n"),
     );
 
     expect(result.data).toEqual({ title: "Hello", tags: ["a", "b"] });

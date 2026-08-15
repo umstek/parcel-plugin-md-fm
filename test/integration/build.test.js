@@ -29,16 +29,20 @@ function run(command, args, opts = {}) {
 let buildOutput = null;
 
 beforeAll(() => {
-  const build = run(process.execPath, [
-    parcelBin,
-    "build",
-    "src/index.js",
-    "--dist-dir",
-    "dist",
-    "--no-cache",
-    "--no-optimize",
-    "--no-autoinstall",
-  ], { cwd: fixtureDir });
+  const build = run(
+    process.execPath,
+    [
+      parcelBin,
+      "build",
+      "src/index.js",
+      "--dist-dir",
+      "dist",
+      "--no-cache",
+      "--no-optimize",
+      "--no-autoinstall",
+    ],
+    { cwd: fixtureDir },
+  );
 
   if (build.status !== 0) {
     throw new Error(`parcel build failed:\n${build.stdout}\n${build.stderr}`);
@@ -48,7 +52,7 @@ beforeAll(() => {
   if (runResult.status !== 0) {
     throw new Error(`running the bundle failed:\n${runResult.stdout}\n${runResult.stderr}`);
   }
-    buildOutput = JSON.parse(runResult.stdout);
+  buildOutput = JSON.parse(runResult.stdout);
 }, 240_000);
 
 describe("real parcel build (fixture consumer)", () => {

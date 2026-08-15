@@ -30,6 +30,8 @@
   "packageManager": "pnpm@11.18.0",
   "scripts": {
     "ci-gpr": "node scripts/prepare-gpr.js",
+    "format": "oxfmt .",
+    "format:check": "oxfmt --check .",
     "lint": "oxlint .",
     "test": "vitest run",
     "test:watch": "vitest"
@@ -40,6 +42,7 @@
   },
   "devDependencies": {
     "@parcel/config-default": "^2.16.4",
+    "oxfmt": "^0.63.0",
     "oxlint": "^1.78.0",
     "parcel": "^2.16.4",
     "vitest": "^4.1.10"
