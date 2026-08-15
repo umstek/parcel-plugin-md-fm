@@ -30,7 +30,8 @@
   "packageManager": "pnpm@11.18.0",
   "scripts": {
     "ci-gpr": "node scripts/prepare-gpr.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "vitest run",
+    "test:watch": "vitest"
   },
   "dependencies": {
     "@parcel/plugin": "^2.0.0",
@@ -38,6 +39,7 @@
   },
   "devDependencies": {
     "@parcel/config-default": "^2.16.4",
-    "parcel": "^2.16.4"
+    "parcel": "^2.16.4",
+    "vitest": "^4.1.10"
   }
 }

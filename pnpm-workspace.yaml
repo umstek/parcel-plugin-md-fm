@@ -1,5 +1,6 @@
 packages:
   - "example"
+  - "test/integration/fixture"
 
 allowBuilds:
   "@parcel/watcher": true
