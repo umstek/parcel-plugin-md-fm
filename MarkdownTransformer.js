@@ -28,7 +28,7 @@ const matter = require("gray-matter");
 function markdownToModule(source) {
   // Drop `orig` (the raw Buffer of the whole file); every other gray-matter
   // field is JSON-serializable and kept as-is.
-  const { orig, ...result } = matter(source);
+  const { orig: _orig, ...result } = matter(source);
   return `module.exports = ${JSON.stringify(result)};`;
 }
 
