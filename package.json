@@ -19,6 +19,7 @@
   "license": "MIT",
   "author": "Wickramaranga Abeygunawardhana <umstek@live.com> (http://www.umstek.tk)",
   "main": "index.js",
+  "packageManager": "pnpm@11.18.0",
   "scripts": {
     "ci-gpr": "node scripts/prepare-gpr.js",
     "test": "echo \"Error: no test specified\" && exit 1"
