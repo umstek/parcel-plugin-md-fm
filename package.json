@@ -1,6 +1,6 @@
 {
   "name": "parcel-transformer-md-fm",
-  "version": "0.8.0",
+  "version": "0.1.0",
   "description": "Parcel v2 transformer for loading markdown with parsed frontmatter",
   "keywords": [
     "parcel",
