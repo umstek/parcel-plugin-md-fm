@@ -1,7 +1,7 @@
 {
-  "name": "parcel-plugin-md-fm",
-  "version": "0.8.0",
-  "description": "Parcel plugin for loading markdown with parsed frontmatter",
+  "name": "parcel-transformer-md-fm",
+  "version": "0.1.0",
+  "description": "Parcel v2 transformer for loading markdown with parsed frontmatter",
   "keywords": [
     "parcel",
     "plugin",
@@ -10,26 +10,41 @@
     "frontmatter"
   ],
   "bugs": {
-    "url": "https://github.com/umstek/parcel-plugin-md-fm/issues"
+    "url": "https://github.com/umstek/parcel-transformer-md-fm/issues"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/umstek/parcel-plugin-md-fm.git"
+    "url": "https://github.com/umstek/parcel-transformer-md-fm.git"
   },
   "license": "MIT",
   "author": "Wickramaranga Abeygunawardhana <umstek@live.com> (http://www.umstek.tk)",
-  "main": "index.js",
+  "main": "MarkdownTransformer.js",
+  "exports": "./MarkdownTransformer.js",
+  "files": [
+    "MarkdownTransformer.js"
+  ],
+  "engines": {
+    "node": ">=20",
+    "parcel": "^2.0.0"
+  },
+  "packageManager": "pnpm@11.18.0",
   "scripts": {
     "ci-gpr": "node scripts/prepare-gpr.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "format": "oxfmt .",
+    "format:check": "oxfmt --check .",
+    "lint": "oxlint .",
+    "test": "vitest run",
+    "test:watch": "vitest"
   },
   "dependencies": {
-    "gray-matter": "^4.0.2"
+    "@parcel/plugin": "^2.0.0",
+    "gray-matter": "^4.0.3"
   },
   "devDependencies": {
-    "parcel-bundler": "1.12.5"
-  },
-  "peerDependencies": {
-    "parcel-bundler": "^1.12.5"
+    "@parcel/config-default": "^2.16.4",
+    "oxfmt": "^0.63.0",
+    "oxlint": "^1.78.0",
+    "parcel": "^2.16.4",
+    "vitest": "^4.1.10"
   }
 }

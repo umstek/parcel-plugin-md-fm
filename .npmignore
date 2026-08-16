@@ -1,8 +1,0 @@
-.cache
-.gitignore
-parcel.log
-dist
-example
-test
-.github
-scripts

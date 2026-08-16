@@ -1,0 +1,9 @@
+packages:
+  - "example"
+  - "test/integration/fixture"
+
+allowBuilds:
+  "@parcel/watcher": true
+  "@swc/core": true
+  lmdb: true
+  msgpackr-extract: true

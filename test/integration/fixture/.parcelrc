@@ -1,0 +1,8 @@
+{
+  "extends": "@parcel/config-default",
+  "transformers": {
+    "*.md": ["parcel-transformer-md-fm"],
+    "*.mdown": ["parcel-transformer-md-fm"],
+    "*.markdown": ["parcel-transformer-md-fm"]
+  }
+}
