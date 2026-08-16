@@ -5,6 +5,13 @@ Parcel v2 transformer for loading markdown with parsed front-matter.
 This is the parcel v2 successor of the parcel v1 plugin `parcel-plugin-md-fm`
 (see [Migrating from v1](#migrating-from-v1)).
 
+> [!WARNING]
+> **Renamed package and repository.** This project was previously published to npm as
+> `parcel-plugin-md-fm` (repository: `umstek/parcel-plugin-md-fm`). The old npm package is
+> **deprecated** and will not receive further updates — switch to `parcel-transformer-md-fm`
+> via [Migrating from v1](#migrating-from-v1). Old GitHub links redirect to this repository
+> automatically.
+
 ## Requirements
 
 - [Parcel](https://parceljs.org/) v2
@@ -110,3 +117,6 @@ If you used the parcel v1 plugin `parcel-plugin-md-fm`:
    `content`, `data`, `isEmpty` and `excerpt`. The one deliberate change: the
    `orig` field (a JSON-serialized Buffer of the whole source file) is no
    longer embedded in the bundle output.
+
+The renamed package restarts versioning at `0.1.0`; there is no semver
+continuity with `parcel-plugin-md-fm` releases.
