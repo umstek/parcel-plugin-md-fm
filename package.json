@@ -10,11 +10,11 @@
     "frontmatter"
   ],
   "bugs": {
-    "url": "https://github.com/umstek/parcel-plugin-md-fm/issues"
+    "url": "https://github.com/umstek/parcel-transformer-md-fm/issues"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/umstek/parcel-plugin-md-fm.git"
+    "url": "https://github.com/umstek/parcel-transformer-md-fm.git"
   },
   "license": "MIT",
   "author": "Wickramaranga Abeygunawardhana <umstek@live.com> (http://www.umstek.tk)",
