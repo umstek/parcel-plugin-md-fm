@@ -69,12 +69,20 @@ import frontMatter from "./file.md";
 console.log(frontMatter.content, frontMatter.data);
 ```
 
-If you get errors or red underlines in editors, add a `markdown.d.ts` file containing:
+If you get errors or red underlines in editors, add a `markdown.d.ts` file declaring
+the extensions you import (shown for `*.md`; repeat for `*.mdown` and `*.markdown`):
 
 ```ts
 declare module "*.md" {
-  const content: string;
-  const data: object;
+  export const content: string;
+  export const data: Record<string, unknown>;
+  const frontMatter: {
+    content: string;
+    data: Record<string, unknown>;
+    isEmpty: boolean;
+    excerpt: string;
+  };
+  export default frontMatter;
 }
 ```
 
